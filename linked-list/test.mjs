@@ -30,3 +30,25 @@ list.insertLast(0);
 list.insertLast(1);
 list.insertLast(2);
 list.printAll();
+
+console.log('===== deleteAt() 호출 ===== ');
+list.deleteAt(0);
+list.printAll();
+list.deleteAt(1);
+list.printAll();
+
+console.log('===== deleteLast() 호출 ===== ');
+list.insertLast(5);
+list.deleteLast();
+list.deleteLast();
+list.printAll();
+
+console.log('===== getNodeAt() 호출 ===== ');
+list.insertLast(1);
+list.insertLast(2);
+list.insertLast(3);
+list.insertLast(4);
+list.insertLast(5);
+
+let secondNode = list.getNodeAt(2);
+console.log(secondNode);
